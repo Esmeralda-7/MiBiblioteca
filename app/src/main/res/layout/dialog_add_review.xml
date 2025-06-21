@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RatingBar
+        android:id="@+id/review_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:progressTint="#FFD700"
+        android:isIndicator="false"
+        android:scaleX="0.9"
+        android:scaleY="0.9"
+        android:padding="0dp" />
+
+    <EditText
+        android:id="@+id/review_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu reseña aquí..."
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:background="@drawable/edittext_background"/>
+
+</LinearLayout>

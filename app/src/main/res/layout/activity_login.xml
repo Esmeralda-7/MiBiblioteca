@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D2336"
+    android:orientation="vertical"
+    android:padding="56dp">
+
+    <LinearLayout
+        android:layout_width="304dp"
+        android:layout_height="243dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:baselineAlignBottom="false"
+            app:srcCompat="@drawable/logobibli" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:textColor="#FEFEFE"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColor="#FEFEFE"
+        android:textColorHint="#FFFFFF" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#666666"
+        android:text="Iniciar sesión" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#666666"
+        android:text="Registrarse" />
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#666666"
+        android:text="Iniciar sin cuenta"
+        android:translationY="310px" />
+
+
+</LinearLayout>

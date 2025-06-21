@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/category_all"
+        android:title="Todos" />
+    <item
+        android:id="@+id/category_fiction"
+        android:title="Ficción" />
+    <item
+        android:id="@+id/category_non_fiction"
+        android:title="No Ficción" />
+    <!-- Agrega más elementos aquí si es necesario -->
+</menu>
+

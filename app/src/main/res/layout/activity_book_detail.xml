@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0F283E"
+    tools:context=".BookDetailActivity">
+
+    <!-- Barra superior con botones (Fija en la parte superior) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B1C2B"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <!-- Botón Menú con descripción accesible -->
+        <ImageButton
+            android:id="@+id/Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0B1C2B"
+            app:srcCompat="@drawable/menu_hamburguesa"
+            android:contentDescription="Abrir menú de navegación" />
+
+        <!-- Espaciador para centrar el contenido -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Botón Favoritos con descripción accesible -->
+        <ImageButton
+            android:id="@+id/BotonFavoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0B1C2B"
+            app:srcCompat="@drawable/icons8_lazo_marcap_ginas_50"
+            android:contentDescription="Agregar a favoritos" />
+    </LinearLayout>
+
+    <!-- Contenido desplazable (debajo de la barra superior) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Imagen del libro -->
+            <ImageView
+                android:id="@+id/book_image_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerInside" />
+
+
+            <!-- Título del libro -->
+            <TextView
+                android:id="@+id/book_title_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Categoría del libro -->
+            <TextView
+                android:id="@+id/book_category_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#CCCCCC"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <!-- Descripción del libro -->
+            <TextView
+                android:id="@+id/book_description_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#CCCCCC"
+                android:layout_marginTop="8dp" />
+
+            <!-- Botón para ver más detalles -->
+            <Button
+                android:id="@+id/button_view_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leer"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#724DC8"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <!-- Botón para enviar la reseña -->
+            <Button
+                android:id="@+id/submit_review_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enviar Reseña"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#724DC8"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"/>
+            <!-- Divider Line -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp" />
+
+            <!-- Título para sección de reseñas -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reseñas:"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:paddingTop="16dp" />
+
+            <TextView
+                android:id="@+id/book_average_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <!-- RecyclerView para mostrar reseñas -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/review_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

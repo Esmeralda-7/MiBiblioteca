@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "918528614411",
+    "project_id": "bibliotecavirtual-436d9",
+    "storage_bucket": "bibliotecavirtual-436d9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918528614411:android:905a53b920bc99602ea70e",
+        "android_client_info": {
+          "package_name": "com.example.bibliotecavirtual"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClxWr_WNcWvxW9GW6oufyyYDJhXRnPIag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
